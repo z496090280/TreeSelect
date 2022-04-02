@@ -1,10 +1,10 @@
 <!--
  * @Author: lee
  * @Date: 2022-04-02 14:28:13
- * @LastEditTime: 2022-04-02 16:25:34
+ * @LastEditTime: 2022-04-02 17:06:41
 -->
 🌲这是一个多级选择树插件🌲
-![blockchain](https://github.com/OBKoro1/koro1FileHeader/raw/master/images/function-params.gif?raw=true "区块链")
+![image](https://github.com/z496090280/TreeSelect/blob/master/img/1648889432982720%202.gif?raw=true "区块链")
 
 首先接口方面是一级级获取，并非一次性拉取。
 这样做有利于加载优化，其中ancestorIds字段再「编辑」情况下需要后端带出
