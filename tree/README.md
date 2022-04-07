@@ -1,7 +1,7 @@
 <!--
  * @Author: lee
  * @Date: 2022-04-02 14:28:13
- * @LastEditTime: 2022-04-07 16:19:51
+ * @LastEditTime: 2022-04-07 16:28:50
 -->
 <p align="center">🌲这是一个多级选择树插件🌲</p>
 <div align="center">
@@ -12,23 +12,23 @@
 首先接口方面是一级级获取，并非一次性拉取。
 这样做有利于加载优化，其中ancestorIds字段再「编辑」情况下需要后端带出
 
-1级别数据如下：
+1级数据如下：
 <pre>
 {
     "id":1143, 
-    "pid":0,  <span style="color: red">// 父级id</span> 
+    "pid":0,  <span style="color: red">// 🔴父级id</span> 
     "name":"饮料酒水",
     "level":1, 
-    "hasChildren":true, <span style="color: red">// 是否有子集</span>
-    "hasSpu":false, <span style="color: green">// 其他需求字段</span>
+    "hasChildren":true, <span style="color: red">// 🔴是否有子集</span>
+    "hasSpu":false, <span style="color: green">// 🟢其他需求字段</span>
     "updatedBy":"f7974635a7974b829d709bc865e6882d",
     "cateCode":null,
     "sourceType":null,
-    "ancestorIds": [] <span style="color: blue">// 此字段为前端自己添加，便于查找祖父实现全/半选，多个祖先</span>
+    "ancestorIds": [] <span style="color: blue">// 🔵此字段为前端自己添加，便于查找祖父实现全/半选，多个祖先</span>
 },
 </pre>
 
-2级别数据如下
+2级数据如下
 <pre>
 {
     "id":1144,
@@ -64,7 +64,7 @@
 
 
 另外需要一个回显接口也就是查询已选中的接口，
-返回数据是$\color{red}{平铺}$的已选中数据
+返回数据是◽️▪️▫️平铺◽️▪️▫️的已选中数据
 ancestorIds字段需带上
 
 ---
