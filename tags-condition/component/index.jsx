@@ -3,7 +3,7 @@ import TagItem from './children/tagItem'
 import { Row, Col } from 'antd'
 import _cloneDeep from 'lodash/cloneDeep';
 
-import 'common/tags-condition-ldp/index.scss'
+import '../index.scss'
 
 // 🌰数据
 // const dataSrc = [

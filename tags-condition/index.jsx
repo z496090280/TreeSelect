@@ -1,7 +1,7 @@
 /*
  * @Author: lee
  * @Date: 2022-04-02 17:19:03
- * @LastEditTime: 2022-04-02 17:23:01
+ * @LastEditTime: 2022-04-07 16:52:07
  */
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Card } from 'antd';
@@ -13,7 +13,7 @@ import _pick from 'lodash/pick';
 import { useCommonData } from '@terminus/mall-base';
 
 import { channelFindCities, findChannelTypes, getPagingList } from 'components/channelMgt/services';
-import 'channelMgt/index.scss';
+import './index.scss';
 
 const { Meta } = Card;
 

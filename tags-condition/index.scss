@@ -1,0 +1,46 @@
+.tagsCondition{
+  width: 900px;
+  position: relative;
+  margin-bottom: 50px;
+  .ant-row{
+    margin-bottom: 20px;
+  }
+  .element-ldp{
+     /* 默认显示一行 */
+    max-height: 22px;
+    overflow: hidden;
+    transition: max-height 0.25s;
+  }
+  :checked ~ .ant-row >.element-ldp {
+    /* 选择了展开后改变max-height高度 */
+    max-height: 500px;
+  }
+  input[type="checkbox"] {
+    position: absolute;
+    /* 把checkout设置成不可见 */
+    clip: rect(0 0 0 0);
+  }
+  .check-out {
+    /* 收起按钮默认隐藏 */  
+    display: none;
+  }
+  .check-in,
+  .check-out {
+    color: #999;
+    cursor: pointer;
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+  }
+  :checked ~ .check-out {
+    /* 展开按钮选中后，折叠按钮显示 */ 
+    display: inline-block;
+  }
+  :checked ~ .check-in {
+    /* 展开按钮选中后，展开按钮隐藏 */ 
+    display: none;
+  }
+  .tag-item{
+    margin-bottom: 10px;
+  }
+}
